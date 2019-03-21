@@ -8,9 +8,9 @@
 </head>
 
 <body>
-  <form>
-    <fieldset>
-      <legend>Votre indentité :</legend>
+  <form class="Formulaire" action="traitement PHP" method="post">
+    <fieldset class="identity">
+      <legend class="identity">Votre indentité :</legend>
       <p>
         <ol>
           <li><label for="Nom">Nom:<input type="text" placeholder="Nom" id="Nom" /></label></li>
@@ -19,28 +19,28 @@
         </ol>
       </p>
     </fieldset>
-    <fieldset>
-      <legend>Votre adresse de livraison :</legend>
+    <fieldset class="livraison">
+      <legend class="livraison">Votre adresse de livraison :</legend>
       <p>
         <ol>
-          <li><label for="Adresse">Adresse:<input type="text" id="Adresse" /></label></li>
+          <li><label for="Adresse">Adresse:<textarea name="Adresse" rows="5" cols="30" id="Adresse"></textarea></label></li>
           <li><label for="Code postal">Code postal:<input type="number" placeholder="Code postal" id="Code postal" /></label></li>
           <li><label for="Ville">Ville:<input type="text" placeholder="Ville" id="Ville" /></label></li>
         </ol>
       </p>
     </fieldset>
-    <fieldset>
-      <legend>Informations de règlement :</legend>
+    <fieldset class="reglement">
+      <legend class="reglement">Informations de règlement :</legend>
       <p>
         <ol>
           <li><label for="Type de carte bancaire">Type de carte bancaire :</label><br></li>
           <input type="radio" name="carte bancaire" value="VISA" id="Type de carte bancaire">
           <label for="VISA">VISA</label><br>
-          <input type="radio" name="carte" value="MASTERCARD"id="Type de carte bancaire">
+          <input type="radio" name="carte" value="MASTERCARD" id="Type de carte bancaire">
           <label for="MASTERCARD">MASTERCARD</label><br>
-          <li><label>Numéro de carte:<input type="text" placeholder="Numéro de carte"id="Numéro de carte"/></label></li>
-          <li><label>Code de sécurité:<input type="text" placeholder="Code de sécurité"id="Code de sécurité"/></label></li>
-          <li><label>Nom du titulaire:<input type="text" placeholder="Nom du titulaire"id="Nom du titulaire"/></label></li>
+          <li><label>Numéro de carte:<input type="text" placeholder="Numéro de carte" id="Numéro de carte" /></label></li>
+          <li><label>Code de sécurité:<input type="text" placeholder="Code de sécurité" id="Code de sécurité" /></label></li>
+          <li><label>Nom du titulaire:<input type="text" placeholder="Nom du titulaire" id="Nom du titulaire" /></label></li>
         </ol>
       </p>
     </fieldset>
